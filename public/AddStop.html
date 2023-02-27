@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   
+    <title>Stop Information</title>
+</head>
+<style>
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+    }
+.container-fluid {
+    padding: 60px 50px;
+    }    
+.bg-grey {
+    background-color: #f6f6f6;
+    }
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+   }
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+.item span {
+    font-style: normal;
+}
+.panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+}
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.panel-heading {
+    color: #fff !important;
+    background-color:black !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: black;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: black!important;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+.bg-4 { 
+    background-color: #2f2f2f;
+    color: #fff;
+}
+</style>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div id="root2"></div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="https://wtsevent.org/faceofamerica/wp-content/uploads/sites/2/2022/02/WTS-FOA-Lockup-Stacked-2color-RGB.gif" alt="LOGO" width="200px" length="100px"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="Stop.html">STOP INFOMATION</a></li>
+              <li><a href="#services">MECHANIC INFOMATION</a></li>
+              <li><a href="#portfolio">REPAIR INFOMATION</a></li>
+              <li><a href="#pricing">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div className="container-fluid" style="padding-top: 10%;">
+        <h1>Add Stop Information</h1>
+      </div>
+      
+      <div class="container" style="padding-top: 5%;">
+        <form class="form-horizontal" action="/action_page.php">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="stop_id">Stop ID:</label>
+            <div class="col-sm-10">
+              <input type="stop_id" class="form-control" id="stop_id" placeholder="Enter Stop ID" name="Stop_ID">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Stop Name:</label>
+            <div class="col-sm-10">          
+              <input type="stop_name" class="form-control" id="stop_name" placeholder="Enter Stop Name" name="Stop_Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="stop_Address">Stop Address:</label>
+            <div class="col-sm-10">
+              <input type="stop_Address" class="form-control" id="stop_Address" placeholder="Enter Stop Address" name="Stop_Address">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="stop_Address">Line Number:</label>
+            <div class="col-sm-10">
+              <input type="Line_Num" class="form-control" id="Line_Num" placeholder="Enter Line Number" name="Line_Num">
+            </div>
+          </div>
+          <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+    
+
+      <br>
+      <footer class="container-fluid bg-4 text-center">
+        <p>Mechanic Record System Made By Team Eagles</p> 
+      </footer>
+  
+    
+
+     
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
+</html>
